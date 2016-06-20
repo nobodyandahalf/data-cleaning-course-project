@@ -14,16 +14,27 @@ The following files are available in the UCI HAR Dataset zip file and used in th
 
 ## Data Transformations
 These steps are taken to transform the raw data files into the tidy dataset(s):
+
 1. Load `reshape2` and `dplyr` libraries.
+
 2. Read in activity labels, features, and subjects of both types (train and test).
+
 3. Read in files linking observations to activity being performed.
+
 4. Read in full data files with observations, using the "features" dataset as columns.
+
 5. Add type, subject, and activity columns to the data sets.
+
 6. Merge the "train" and "test" data to create one dataset.
+
 7. Melt data so each row includes only one observation.
+
 8. Extract only the mean and std measurements - review the features_info.txt file to understand this.
+
 9. Name all columns appropriately and clearly
+
 10. Using the above final data set, use the dplyr package to create an independent tidy data set of averages for each variable/activity/subject combination.
+
 11. Export `tidysummary.txt` to the same working directory.
 
 ## Variables
